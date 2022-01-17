@@ -1,11 +1,65 @@
+    html
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+    }
 
-      .attribution 
-      {
+    h1, h2, .star-cards
+    {
+        font-family: 'Spartan';
+        font-weight: 700;
+    }
+
+    p
+    {
+        font-family: 'Spartan';
+        font-weight: 500;
+    }
+
+    span
+    {
+        font-family: 'Spartan';
+        font-weight: 400; 
+    }
+
+    .star-cards
+    {
+        max-width: 20rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        justify-content: end;
+        background-color: hsl(300, 24%, 96%);
+    }
+
+    .cards
+    {
+        background-color: hsl(300, 43%, 22%);
+        padding: 2rem;
+        margin-bottom: 1em;
+    }
+
+    .Ppic
+    {
+        float: left;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+    }
+
+    .attribution 
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 50px;
         font-size: 11px;
         text-align: center;
-      }
+    }
 
-      .attribution a 
-      {
+    .attribution a 
+    {
         color: hsl(228, 45%, 44%);
-      }
+    }

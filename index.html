@@ -11,6 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | Social proof section</title>
 
@@ -24,14 +28,18 @@
     </p>
     
     <div class="ratings">
-      <div>Rated 5 Stars in Reviews</div>
-      <div>Rated 5 Stars in Report Guru</div>
-      <div>Rated 5 Stars in BestTech</div>
+      <div class="star-cards"><img src="images/icon-star.svg" alt="Stars">Rated 5 Stars in Reviews</div>
+      <div class="star-cards"><img src="images/icon-star.svg" alt="Stars">Rated 5 Stars in Report Guru</div>
+      <div class="star-cards"><img src="images/icon-star.svg" alt="Stars">Rated 5 Stars in BestTech</div>
     </div>
     
-    <div class="card1">
-      <h2>Colton Smith</h2>
-      <span>Verified Buyer</span>
+    <div class="cards" id="card1">
+
+      <div>
+        <img class="Ppic" src="images/image-colton.jpg" alt="Colton">
+        <h2>Colton Smith</h2>
+        <span>Verified Buyer</span>
+      </div>
       <p class="quotes">
         "We needed the same printed design as the one we had ordered a week prior.
         Not only did they find the original order, but we also received it in time.
@@ -39,18 +47,24 @@
       </p>
     </div>
     
-    <div class="card2">
-      <h2>Irene Roberts</h2>
-      <span>Verified Buyer</span>
+    <div class="cards" id="card2">
+      <div>
+        <img class="Ppic" src="images/image-irene.jpg" alt="Irene">
+        <h2>Irene Roberts</h2>
+        <span>Verified Buyer</span>
+      </div>
       <p class="quotes">
         "Customer service is always excellent and very quick turn around. Completely
         delighted with the simplicity of the purchase and the speed of delivery."
       </p>
     </div>
     
-    <div class="card3">
-      <h2>Anne Wallace</h2>
-      <span>Verified Buyer</span>
+    <div class="cards" id="card3">
+      <div>
+        <img class="Ppic" src="images/image-anne.jpg" alt="image-anne">
+        <h2>Anne Wallace</h2>
+        <span>Verified Buyer</span>
+      </div>
       <p class="quotes">
         "Put an order with this company and can only praise them for the very high
         standard. Will definitely use them again and recommend them to everyone!"
@@ -61,7 +75,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/General-Evie" target="_blank">Evie Dickman</a>.
     </div>
   </body>
 </html>
