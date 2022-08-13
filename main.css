@@ -1,65 +1,265 @@
-    html
+*, *::before, *::after { box-sizing: border-box; }
+
+html
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Spartan'; 
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 80em, 80em;
+    background-position-y: -13em, 11rem;
+    background-position-x: -13em, 30rem;
+}
+
+body
+{
+    max-width: 80%;
+}
+
+h1
+{
+    font-size: 3rem;
+    max-width: 30rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: hsl(300, 43%, 22%);
+}
+
+h2
+{
+    font-size: .9em;
+    max-width: 12rem;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+} 
+
+h1, h2, .star-cards
+{
+    font-family: 'Spartan';
+    font-weight: 700;
+}
+
+span
+{
+    font-family: 'Spartan';
+    font-weight: 400;
+    color: hsl(333, 80%, 67%); 
+}
+
+img
+{
+    margin-right: .4rem;
+    float: left;
+}
+
+.top
+{
+    columns: 2;
+    margin-bottom: 5rem;
+}
+
+.info
+{
+    font-family: 'Spartan';
+    font-weight: 500;
+    max-width: 30rem;
+    color:hsl(303, 10%, 53%);
+}
+
+.ratings
+{
+    float: right;
+} 
+
+.star-cards
+{
+    font-size: .9em;
+    width: 30rem;
+    padding: 1.25rem 2rem;
+    margin-bottom: 1.2rem;
+    border-radius: .5rem;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+}
+
+.rated
+{
+    margin-left: 9rem;
+}
+
+.main-cards
+{
+    display: flex;
+    gap: 1rem; 
+    columns: 3;
+    margin-top: 5rem; 
+} 
+
+.cards
+{
+    display: grid;
+    gap: 1rem;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.Ppic
+{
+    height: 2.5em;
+    width: 2.5em;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.quotes
+{
+    font-size: .9em;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution 
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 50px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a 
+{
+    color: hsl(228, 45%, 44%);
+}
+
+#first-rating
+{
+    margin-right: 6rem;
+}
+    
+#second-rating
+{
+    margin-left: 3rem;
+}
+
+#third-rating
+{
+    margin-left: 6rem;
+}
+
+#card1
+{
+    margin-bottom: 2rem;
+}
+
+#card2
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} 
+
+#card3
+{
+    margin-top: 2rem;
+}
+
+@media (max-width: 375px)
+{
+    html 
     {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 100vh;
+        height: 220vh;
+        text-align: center;
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 20em, 25em;
+        background-position-y: 0, 70rem;
+        background-position-x: 3rem, 0;
     }
 
-    h1, h2, .star-cards
+    h1 
     {
-        font-family: 'Spartan';
-        font-weight: 700;
+        font-size: 2em;
+        max-width: 20rem;
     }
 
-    p
+    body 
     {
-        font-family: 'Spartan';
-        font-weight: 500;
+        max-width: fit-content;
     }
 
-    span
+    img
     {
-        font-family: 'Spartan';
-        font-weight: 400; 
+        float: none;
+    }
+
+    .top
+    {
+        columns: 1;
+    }
+
+    .info
+    {
+        font-size: .88em;
+        line-height: 1.5;
+        max-width: 20rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .ratings
+    {
+        display: grid;
+        place-items: center;
+        float: none;
+        max-width: 10rem;
     }
 
     .star-cards
     {
-        max-width: 20rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        justify-content: end;
-        background-color: hsl(300, 24%, 96%);
+        width: 20rem;
     }
 
-    .cards
+    .rated
     {
-        background-color: hsl(300, 43%, 22%);
-        padding: 2rem;
-        margin-bottom: 1em;
+        margin: 0;
+    }
+
+    .main-cards
+    {
+        flex-direction: column;
+        columns: 1;
+        max-width: 20rem;
     }
 
     .Ppic
     {
         float: left;
-        height: 48px;
-        width: 48px;
-        border-radius: 50%;
     }
 
-    .attribution 
+    .quotes
     {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: 50px;
-        font-size: 11px;
-        text-align: center;
+        font-size: .8em;
     }
 
-    .attribution a 
+    .attribution
     {
-        color: hsl(228, 45%, 44%);
+        bottom: -49rem;
+        margin: 0;
     }
+
+    #first-rating, #second-rating, #third-rating
+    {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    #card1, #card2, #card3
+    {
+        margin: 0;
+    }
+
+}
